@@ -20,8 +20,10 @@ function verifyApplicationStatus(appStatus) {
            break;
 
     }
-    return messageValue;
+   return messageValue;
 
 }
 
+verifyApplicationStatus("Review");
 verifyApplicationStatus("Approved");
+verifyApplicationStatus("Under Review");
