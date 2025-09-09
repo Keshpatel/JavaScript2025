@@ -63,4 +63,13 @@ console.log("All Application operations and user roles : "+ finalPresent);
 let appTypeJoin = applicationType.join(" | ");
 console.log("Application types are : "+ appTypeJoin);
 
+//For..each loop 
+let leadPanels = ["Lead", "Supervisor", "Manager", "Director"];
+leadPanels.forEach((u)=> {
+    console.log("Application Approval Panel: "+ u);
+});
+
+leadPanels.forEach((p, index)=> {
+    console.log("Application Approval Panel: "+ index + " -> " + p);
+});
 
