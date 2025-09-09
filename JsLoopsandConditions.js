@@ -37,3 +37,14 @@ verifyApplicationApprovalBusinessDays(0);
 verifyApplicationApprovalBusinessDays(1);
 verifyApplicationApprovalBusinessDays(5);
 verifyApplicationApprovalBusinessDays(10);
+console.log("Application Operations initialization....")
+let appType = "New";
+if(appType =="New") {
+    console.log("Open New Master Tab-> New Application initiating...");
+} else if(appType == "Update") {
+    console.log("Modify exisiting Application, Enter Exisiting Application Id ");
+} else if(appType =="Submit") {
+    console.log("Submitting New OR Updated Application ");
+} else {
+    console.log("Enter valid Application operation.... ");
+}
