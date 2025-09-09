@@ -27,3 +27,21 @@ function verifyApplicationStatus(appStatus) {
 verifyApplicationStatus("Review");
 verifyApplicationStatus("Approved");
 verifyApplicationStatus("Under Review");
+
+
+let loginTo = "AdminNew";
+switch(loginTo) {
+   case "OS1":
+      console.log("Login to OS1");
+      break;
+   case "OS2":
+      console.log("Login to OS2");
+      break;
+   case "AdminNew":
+      console.log("Login to Admin ");
+      break
+   default:
+      console.log("Invalid login option");
+      break;
+}
+   
