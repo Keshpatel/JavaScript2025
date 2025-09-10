@@ -80,3 +80,30 @@ let newForms = [
 
 let totalForms = newForms.reduce((total, form) => total + form.count, 0);
 console.log("Total Application Forms to process : "+ totalForms);
+
+
+//==================================
+// every() , some() , find() , findIndex()
+let landUsers = ["Admin", "Editor", "Lead", "Viewer", "Super Admin","Lead"];
+let allValid = landUsers.every((role) => role !== "Guest");
+console.log("Users list"+ allValid);
+
+let anyValid = landUsers.some((role) => role === "Editor");
+console.log("Any one land user is valid : "+ anyValid);
+
+let leadRole = landUsers.find((role) => role.startsWith("L"));
+console.log("Lead availbale to process application : "+ leadRole);
+
+let userRoleIndex = landUsers.findIndex((role) => role.startsWith("L"));
+console.log("Lead available at : "+ userRoleIndex +" position to process application");
+//==================================
+
+//reverse() , sorted(), sort() 
+let appIds = [3004110, 3004114, 3004175, 3004180, 3004181];
+appIds.reverse(); console.log(appIds);
+
+let adminUsersIds = ["0078Admin","007722","001Main","55","1000","newAdmin","A1admin"];
+adminUsersIds.sort(); console.log(adminUsersIds);
+adminUsersIds.sort((a,b) => a.localeCompare(b)); console.log(adminUsersIds);
+
+//let adminUsersIdsSorted = adminUsersIds.sorted(); console.log(adminUsersIdsSorted);

@@ -35,11 +35,16 @@ console.log(newAppType);
 newAppType = applicationType
 console.log(newAppType);
 
-//indexOf
+//indexOf and lastIndexOf
 let appIndex = applicationType.indexOf("Water");
 console.log("Water App Type is at >> "+ appIndex +" << position inside array");
 applicationType.push("Lands"); 
 console.log(applicationType);
+
+let applicationStattus = ["New","InProgress","Submitted","Approved","UnderReview","Declined", "Deleted", "Approved"];
+let appStatusIndex = applicationStattus.lastIndexOf("Approved");
+console.log("\nLast Approved App Status is at >> "+ appStatusIndex +" << position inside array");
+
 
 let landsKeyword = applicationType.indexOf("Lands"); console.log("\n 1st location: "+ landsKeyword);
 landsKeyword = applicationType.indexOf("Lands",applicationType.indexOf("Lands")+1); console.log("\n 2ed location: "+ landsKeyword);
