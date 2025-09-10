@@ -1,11 +1,29 @@
 console.log("Initiating Basics Of JavaScript...");
 
+console.log("========TypeOF==============");
+let a =10;   console.log(typeof a);
+a='Hi'; console.log(typeof a);
 
+let containerID = -6 ;  let ctype = typeof containerID;
+console.log("Container " + containerID + "variable Type is :" + ctype);
+containerID = "-6ABC" ; ctype = typeof containerID;
+console.log("Container " + containerID + "variable Type is :" + ctype);
+
+const companySeries = [1, 2,, 5, 6, 8, 9, ,11, 111, 111];
+const z = null;
+let y ;
+console.log("TypeOf varibale declared are  : ", typeof(companySeries) +" | " +typeof(z)+" | " + typeof(y));
+
+function masterClass(classID) { console.log("\nMain Master Class is : "+ classID); }
+masterClass("class1");
+console.log("Function's type is "+typeof masterClass);
+
+console.log("========+++++++++++++==============");
+
+console.log("\nVariable Scope in Java Script")
 var i = 5;   //Global Scope 
-
 function basic1() {
     var j = 10;     //Functional Scope
-
 }
 console.log(i);
 
